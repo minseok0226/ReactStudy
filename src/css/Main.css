@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
+#main-header{
+  padding: 4px 16px;
+}
+
+#SimSimi-header{
+  color: black;
+  margin-left: -10px; 
+
 }
 
 .App-logo {
@@ -24,15 +30,3 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
