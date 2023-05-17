@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>성창식</h1>
+        <p>김민석ㅎㅎㅎ</p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
