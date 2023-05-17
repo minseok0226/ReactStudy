@@ -7,12 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>김민석ㅎㅎㅎ</p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          나눌나누리두번째
         </p>
         <a
           className="App-link"
