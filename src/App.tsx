@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -24,30 +24,33 @@ function App() {
     backgroundColor: 'pink',
     color: 'black',
     border: 'none',
-    padding: '10px 20px',
-    borderRadius: '50%'
+    padding: '10px 10px',
+    borderRadius: '35%'
   };
+
+
+
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>나누리</h1>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h3>나눌나누리</h3>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+         위에 돌아가는 아이콘도 <br/> 수정하고싶어요 ㅎㅎ
         </p>
         <input type="text" id="api-text" name="api-input" />
-        <button type="button" id="api-button" onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut} style={buttonStyle}>실행</button>
+        <button type="button" id="api-button" onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut} style={buttonStyle}>버튼을 눌러주세요</button>
         <p>
-           아직도 두시간이나 남았다니 믿고싶지 않네요
+           이것 저것 만들어보고 <br/> 뜯어보고 수정해보는 중 입니다 <br/> 하나하나 해볼 수록 재밌네요
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=SXKlJuO07eM"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          제가 좋아하는 노래입니다
         </a>
       </header>
     </div>
