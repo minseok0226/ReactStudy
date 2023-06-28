@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+    <!-- 표를 그릴 땐 css 를 사용하는데 아직 배우지 않았기에 다른 방식으로 따라해보는 과정-->
+    <style>
+      /* 스타일 안에 내가 선언한 클래스를 입력해서 색 변경 가능 */
+      table {
+        border: 1px solid rgb(245, 60, 205);
+        border-collapse: collapse;
+        /* <!-- 바로 위 보더 콜랩스 선언 하면 줄이 한줄만 됨 --> */
+      }
+      th,
+      td {
+        border: 1px solid rgb(78, 78, 178);
+        padding: 12px; /* 칸의 여백을 설정 */
+        color: blueviolet; 
+      }
+      h1 {
+        color: blue;
+      }
+
+      /* 앞에 점 안 붙이니까 적용 안 됐음 이유는 모르지만 . 을 넣어야지 변경 됨 나중에 물어보기 */
+      .col1 {
+        width: 80px;
+      }
+      .col2 {
+        background-color: yellow;
+      }
+      /* <!-- th, td 하면 표에 줄이 두개가 그어지는데 이거를 없애려면 아직은 몰라도 되지만 보더 콜랩스 위에 선언 --> */
+    </style>
+  </head>
+  <body>
+    <h1>Table 기본</h1>
+    <table>
+      <!-- table border 라고 입력하면 표가 그려지기는 하나 표준은 아니기에 안 쓰임-->
+      <caption>
+        프로필 테이블
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>취미</th>
+        <th>특기</th>
+      </tr>
+      <tr>
+        <td>홍길동</td>
+        <td>도술</td>
+        <td>축지법</td>
+      </tr>
+      <tr>
+        <td>짐코딩</td>
+        <td>헬스</td>
+        <td>코딩</td>
+      </tr>
+    </table>
+    <hr>
+    <h1>Table 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+      <col class="col1" />
+      <col class="col2" />
+      <col class="col3" />
+      <col class="col4" />
+      <col class="col5" />
+      <col class="col6" />
+    </colgroup>
+      <thead>
+          <tr>
+            <th>반</th>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>코딩</th>
+          </tr>
+      </thead>
+      <tbody>  
+          <tr>
+            <td rowspan="2">1반</td>  <!-- 행을 하나로 묶는 방법 td rowspan="2" 2는 행2개를 뜻함-->
+            <td>홍길동</td>
+            <td>90</td>
+            <td>100</td>
+            <td>90</td>
+            <td>81</td>
+          </tr>
+          <tr>
+            <td>짐코딩</td>
+            <td>85</td>
+            <td>81</td>
+            <td>95</td>
+            <td>100</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+            <td colspan="2">평균</td> <!-- 열을 하나로 묶는 건 colspan-->
+            <td>87.5</td>
+            <td>90.5</td>
+            <td>92.5</td>
+            <td>90.5</td>
+          </tr>
+      </tfoot>      
+    </table>
+  </body>
+</html>

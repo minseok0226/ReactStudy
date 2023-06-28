@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--자식 노드-->
+    <div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 형제 노드-->
+    <div>
+      <ul></ul>
+      <ol></ol>
+      <div></div>
+    </div>
+
+    <!--반복하기-->
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!--아이디 태그 # span샵item 입력하면 하단 처럼 나옴-->
+    <span id="item"></span>
+
+    <!-- 태그의 기본 값은 div 이기 때문에 샵item 하면 하단 처럼 나옴-->
+    <div id="item"></div>
+
+    <!-- 클래스 속성 태그 . span점tittle 입력하면 하단 처럼 나옴-->
+    <span class="tittle"></span>
+
+    <!-- 이것도 기본 값이 div 이기 때문에 점tittle 입력하면 하단 처럼 나옴-->
+    <div class="tittle"></div>
+
+    <!-- 태그 안에 콘탠츠를 자동으로 넣는 에밋 {} p.container{Hello World~!} 입력 후 tab 하면 하단 처럼 나옴-->
+    <!-- 컨테이너 라는 클래스 명을 같는 p 태그가 생성이 되며, 그 안에 핼로우월드 라는 콘텐츠 가 생성이 됨-->
+    <p class="container">HEllo World~!</p>
+
+    <!-- p#container{Hello World~!} 하면 아이디 태그로 나옴-->
+    <p id="container">Hello World~!</p>
+
+    <!-- 자동 넘버링 $ -->
+    <!-- p.container{item$}*5 이렇게 입력하면 하단 과 같이 나옴 
+container 라는 클래스 안에 item 이라는 콘텐츠가 *5 해서 다섯개에 대해 item 자동 넘버링 -->
+    <p class="container">item1</p>
+    <p class="container">item2</p>
+    <p class="container">item3</p>
+    <p class="container">item4</p>
+    <p class="container">item5</p>
+  </body>
+</html>
